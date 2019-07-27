@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace BinaryGap
 {
-    class BinaryGap
+    public class BinaryGap
     {
         public int Solution(int N)
         {
