@@ -10,7 +10,7 @@ namespace BinaryGap
             var binary = Convert.ToString(N, 2);
             // Func<int, int> map = (v, i) => new { Value = v, Index = i};
 
-            var result = binary.Select((v, i) => new {Value = Convert.ToBoolean(Char.GetNumericValue(v)), Index = i})
+            var result = binary.Select((v, i) => new {Value = Convert.ToBoolean(char.GetNumericValue(v)), Index = i})
                 .Where(e => e.Value)
                 .Aggregate(new {Gap = 0, Index = 0}, (acc, v) =>
                 {
