@@ -9,19 +9,21 @@ namespace BinaryGap
         {
             var binary = Convert.ToString(N, 2);
             // Func<int, int> map = (v, i) => new { Value = v, Index = i};
+            (int Gap, int Index) seed = (0, 0);
 
             var result = binary.Select((v, i) => new {Value = Convert.ToBoolean(char.GetNumericValue(v)), Index = i})
                 .Where(e => e.Value)
-                .Aggregate(new {Gap = 0, Index = 0}, (acc, v) =>
+                .Aggregate(seed, (acc, v) =>
                 {
-                    var newGap = v.Index - acc.Index - 1;
-                    var gap = acc.Gap;
+                    var newIndex = v.Index;
+                    var (gap, oldIndex) = acc;
+                    var newGap = newIndex - oldIndex - 1;
                     if (newGap > gap)
                     {
                         gap = newGap;
                     }
 
-                    return new {Gap = gap, v.Index};
+                    return (gap, newIndex);
                 }, r => r.Gap);
             return result;
         }
