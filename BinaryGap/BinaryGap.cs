@@ -13,9 +13,9 @@ namespace BinaryGap
 
             var result = binary.Select((v, i) => new {Value = Convert.ToBoolean(char.GetNumericValue(v)), Index = i})
                 .Where(e => e.Value)
-                .Aggregate(seed, (acc, v) =>
+                .Select(v => v.Index)
+                .Aggregate(seed, (acc, newIndex) =>
                 {
-                    var newIndex = v.Index;
                     var (gap, oldIndex) = acc;
                     var newGap = newIndex - oldIndex - 1;
                     if (newGap > gap)
