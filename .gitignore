@@ -1,0 +1,17 @@
+.idea/
+CodilityLessons.sln.DotSettings.user
+.DS_STORE
+**/.DS_Store
+obj/
+bin/
+
+
+# NuGet Packages
+*.nupkg
+*.nuget.g.props
+*.nuget.g.targets
+*.nuget.cache
+**/packages/*
+*.nuget.dgspec.json
+project.lock.json
+project.assets.json
