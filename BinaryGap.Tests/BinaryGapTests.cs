@@ -23,5 +23,14 @@ namespace BinaryGap.Tests
             var binaryGap = new BinaryGap();
             Assert.Equal(expected, binaryGap.Solution(n));
         }
+
+        [Theory]
+        [InlineData(138, 3)]
+        [InlineData(2073, 6)]
+        public void FirstBinaryGapIsLongestTest(int n, int expected)
+        {
+            var binaryGap = new BinaryGap();
+            Assert.Equal(expected, binaryGap.Solution(n));
+        }
     }
 }
