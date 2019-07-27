@@ -21,7 +21,7 @@ namespace BinaryGap
                         gap = newGap;
                     }
 
-                    return new {Gap = gap, Index = v.Index};
+                    return new {Gap = gap, v.Index};
                 }, (r) => r.Gap);
             return result;
         }
