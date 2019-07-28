@@ -7,10 +7,9 @@ namespace Lesson02.OddOccurrencesInArray
         public int Solution(int[] a)
         {
             var result = a.GroupBy(e => e)
-                .Where(e => e.Count() == 1)
+                .Where(e => e.Count() % 2 == 1)
                 .Select(e => e.Key)
                 .FirstOrDefault();
-
             return result;
         }
     }
