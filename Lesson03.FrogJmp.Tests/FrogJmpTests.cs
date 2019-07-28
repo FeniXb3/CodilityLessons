@@ -4,15 +4,12 @@ namespace Lesson03.FrogJmp.Tests
 {
     public class FrogJmpTests
     {
-        [Fact]
-        void SampleDataTest()
+        [Theory]
+        [InlineData(10, 85, 30, 3)]
+        [InlineData(7, 53, 14, 4)]
+        void SmallValuesTest(int x, int y, int d, int expected)
         {
-            var x = 10;
-            var y = 85;
-            var d = 30;
-
             var solution = new FrogJmpSolution();
-            var expected = 3;
 
             var result = solution.Solution(x, y, d);
 

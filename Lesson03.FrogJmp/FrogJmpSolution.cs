@@ -1,4 +1,6 @@
-﻿namespace Lesson03.FrogJmp
+﻿using System;
+
+namespace Lesson03.FrogJmp
 {
     public class FrogJmpSolution
     {
@@ -16,7 +18,9 @@
                 return 1;
             }
 
-            return 3;
+            int result = (int) Math.Ceiling(distance / (float) d);
+
+            return result;
         }
     }
 }
