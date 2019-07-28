@@ -18,7 +18,7 @@ namespace Lesson03.FrogJmp
                 return 1;
             }
 
-            int result = (int) Math.Ceiling(distance / (float) d);
+            int result = (distance / d) + Math.Min(1, distance % d) ;
 
             return result;
         }

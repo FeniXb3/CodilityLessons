@@ -45,5 +45,20 @@ namespace Lesson03.FrogJmp.Tests
 
             Assert.Equal(expected, result);
         }
+
+        [Fact]
+        void ManyJumpsTest()
+        {
+            var x = 2;
+            var y = 1000000000;
+            var d = 3;
+
+            var solution = new FrogJmpSolution();
+            var expected = 333333333;
+
+            var result = solution.Solution(x, y, d);
+
+            Assert.Equal(expected, result);
+        }
     }
 }
