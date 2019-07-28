@@ -51,5 +51,17 @@ namespace Lesson02.CyclicRotation.Tests
 
             Assert.Equal(expected, solution.Solution(a, k));
         }
+
+        [Fact]
+        void EmptyDataTest()
+        {
+            var a = new int[] {};
+            var k = 3;
+
+            var solution = new CyclicRotationSolution();
+            var expected = new int[] {};
+
+            Assert.Equal(expected, solution.Solution(a, k));
+        }
     }
 }

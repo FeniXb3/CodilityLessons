@@ -7,7 +7,8 @@ namespace Lesson02.CyclicRotation
         public int[] Solution(int[] a, int k)
         {
             var length = a.Length;
-            if (k % length == 0)
+
+            if (length == 0 || k % length == 0)
                 return a;
 
             var amount = length - (k % length);
