@@ -4,13 +4,12 @@ namespace Lesson03.PermMissingElem.Tests
 {
     public class PermMissingElemTests
     {
-        [Fact]
-        void SampleDataTest()
+        [Theory]
+        [InlineData(new[] {2, 3, 1, 5}, 4)]
+        [InlineData(new[] {7, 1, 2, 6, 3, 4}, 5)]
+        void SmallDataTest(int[] a, int expected)
         {
-            var a = new[] {2, 3, 1, 5};
-
             var solution = new PermMissingElemSolution();
-            var expected = 4;
 
             var result = solution.Solution(a);
 

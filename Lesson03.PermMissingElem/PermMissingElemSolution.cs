@@ -1,4 +1,6 @@
-﻿namespace Lesson03.PermMissingElem
+﻿using System.Linq;
+
+namespace Lesson03.PermMissingElem
 {
     public class PermMissingElemSolution
     {
@@ -11,7 +13,12 @@
                 return 1;
             }
 
-            return 4;
+            var result = Enumerable
+                .Range(1, length + 1)
+                .Except(a)
+                .Single();
+
+            return result;
         }
     }
 }
