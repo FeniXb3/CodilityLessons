@@ -33,5 +33,20 @@ namespace Lesson03.FrogJmp.Tests
 
             Assert.Equal(expected, result);
         }
+
+        [Fact]
+        void JumpBiggerThanDistanceTest()
+        {
+            var x = 10;
+            var y = 85;
+            var d = 10000;
+
+            var solution = new FrogJmpSolution();
+            var expected = 1;
+
+            var result = solution.Solution(x, y, d);
+
+            Assert.Equal(expected, result);
+        }
     }
 }

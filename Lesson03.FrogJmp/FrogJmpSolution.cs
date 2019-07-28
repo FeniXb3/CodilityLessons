@@ -9,6 +9,13 @@
                 return 0;
             }
 
+            var distance = y - x;
+
+            if (distance < d)
+            {
+                return 1;
+            }
+
             return 3;
         }
     }
