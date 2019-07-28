@@ -16,5 +16,18 @@ namespace Lesson03.PermMissingElem.Tests
 
             Assert.Equal(expected, result);
         }
+
+        [Fact]
+        void EmptyDataTest()
+        {
+            var a = new int[] {};
+
+            var solution = new PermMissingElemSolution();
+            var expected = 1;
+
+            var result = solution.Solution(a);
+
+            Assert.Equal(expected, result);
+        }
     }
 }
