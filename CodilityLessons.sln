@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryGap", "BinaryGap\BinaryGap.csproj", "{971A5D65-7942-42DD-8CA1-19436A959C58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson01.BinaryGap", "Lesson01.BinaryGap\Lesson01.BinaryGap.csproj", "{971A5D65-7942-42DD-8CA1-19436A959C58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryGap.Tests", "BinaryGap.Tests\BinaryGap.Tests.csproj", "{88E45040-1AA1-4F48-BE0C-DAAE7D705B56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson01.BinaryGap.Tests", "Lesson01.BinaryGap.Tests\Lesson01.BinaryGap.Tests.csproj", "{88E45040-1AA1-4F48-BE0C-DAAE7D705B56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

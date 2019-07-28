@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\BinaryGap\BinaryGap.csproj" />
+      <ProjectReference Include="..\Lesson01.BinaryGap\Lesson01.BinaryGap.csproj" />
     </ItemGroup>
 
 </Project>

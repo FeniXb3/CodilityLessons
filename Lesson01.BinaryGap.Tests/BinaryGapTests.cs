@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace BinaryGap.Tests
+namespace Lesson01.BinaryGap.Tests
 {
     public class BinaryGapTests
     {

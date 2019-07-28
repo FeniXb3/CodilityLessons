@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace BinaryGap
+namespace Lesson01.BinaryGap
 {
     public class BinaryGap
     {
