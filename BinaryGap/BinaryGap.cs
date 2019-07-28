@@ -8,7 +8,6 @@ namespace BinaryGap
         public int Solution(int N)
         {
             var binary = Convert.ToString(N, 2);
-            // Func<int, int> map = (v, i) => new { Value = v, Index = i};
 
             var result = binary.Select((v, i) => (Value: ToBoolean(v), Index: i))
                 .Where(e => e.Value)
