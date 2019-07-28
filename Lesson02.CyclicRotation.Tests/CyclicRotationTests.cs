@@ -27,5 +27,17 @@ namespace Lesson02.CyclicRotation.Tests
 
             Assert.Equal(expected, solution.Solution(a, k));
         }
+
+        [Fact]
+        void CyclesEqualDataLengthTest()
+        {
+            var a = new[] {1, 2, 3, 4};
+            var k = 4;
+
+            var solution = new CyclicRotationSolution();
+            var expected = new[] {1, 2, 3, 4};
+
+            Assert.Equal(expected, solution.Solution(a, k));
+        }
     }
 }
