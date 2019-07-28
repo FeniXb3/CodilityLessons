@@ -2,5 +2,9 @@
 {
     public class TapeEquilibriumSolution
     {
+        public int Solution(int[] a)
+        {
+            return 1;
+        }
     }
 }
