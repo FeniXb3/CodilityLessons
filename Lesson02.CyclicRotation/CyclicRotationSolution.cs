@@ -6,10 +6,11 @@ namespace Lesson02.CyclicRotation
     {
         public int[] Solution(int[] a, int k)
         {
-            if (k == a.Length)
+            var length = a.Length;
+            if (k % length == 0)
                 return a;
 
-            var amount = a.Length - k;
+            var amount = length - (k % length);
             var tmp = a.Skip(amount);
             var result = tmp
                 .Concat(a.Take(amount))
