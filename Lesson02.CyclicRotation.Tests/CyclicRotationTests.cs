@@ -15,5 +15,17 @@ namespace Lesson02.CyclicRotation.Tests
 
             Assert.Equal(expected, solution.Solution(a, k));
         }
+
+        [Fact]
+        void TheSameNumberTest()
+        {
+            var a = new[] {0, 0, 0};
+            var k = 1;
+
+            var solution = new CyclicRotationSolution();
+            var expected = new[] {0, 0, 0};
+
+            Assert.Equal(expected, solution.Solution(a, k));
+        }
     }
 }
