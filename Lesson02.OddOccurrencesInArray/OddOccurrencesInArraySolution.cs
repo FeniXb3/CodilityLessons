@@ -1,10 +1,17 @@
-﻿namespace Lesson02.OddOccurrencesInArray
+﻿using System.Linq;
+
+namespace Lesson02.OddOccurrencesInArray
 {
     public class OddOccurrencesInArraySolution
     {
         public int Solution(int[] a)
         {
-            return 7;
+            var result = a.GroupBy(e => e)
+                .Where(e => e.Count() == 1)
+                .Select(e => e.Key)
+                .FirstOrDefault();
+
+            return result;
         }
     }
 }
