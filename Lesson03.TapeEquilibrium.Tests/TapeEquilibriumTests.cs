@@ -4,14 +4,12 @@ namespace Lesson03.TapeEquilibrium.Tests
 {
     public class TapeEquilibriumTests
     {
-        [Fact]
-        void SampleDataTest()
+        [Theory]
+        [InlineData(new[] {3, 1, 2, 4, 3}, 1)]
+        [InlineData(new[] {1, 2, 3}, 0)]
+        void SmallDataTest(int[] a, int expected)
         {
-            var a = new[] {3, 1, 2, 4, 3};
-
-
             var solution = new TapeEquilibriumSolution();
-            var expected = 1;
 
             var result = solution.Solution(a);
 
