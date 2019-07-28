@@ -20,6 +20,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03.PermMissingElem", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03.PermMissingElem.Tests", "Lesson03.PermMissingElem.Tests\Lesson03.PermMissingElem.Tests.csproj", "{E45129A4-9AE1-4AEE-B757-1CB84A189B16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03.TapeEquilibrium", "Lesson03.TapeEquilibrium\Lesson03.TapeEquilibrium.csproj", "{1294C96A-3806-41D5-8695-A37287A083E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03.TapeEquilibrium.Tests", "Lesson03.TapeEquilibrium.Tests\Lesson03.TapeEquilibrium.Tests.csproj", "{2015C67B-D128-4719-9537-8635727ECC9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +70,13 @@ Global
 		{E45129A4-9AE1-4AEE-B757-1CB84A189B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E45129A4-9AE1-4AEE-B757-1CB84A189B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E45129A4-9AE1-4AEE-B757-1CB84A189B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1294C96A-3806-41D5-8695-A37287A083E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1294C96A-3806-41D5-8695-A37287A083E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1294C96A-3806-41D5-8695-A37287A083E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1294C96A-3806-41D5-8695-A37287A083E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2015C67B-D128-4719-9537-8635727ECC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2015C67B-D128-4719-9537-8635727ECC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2015C67B-D128-4719-9537-8635727ECC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2015C67B-D128-4719-9537-8635727ECC9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
