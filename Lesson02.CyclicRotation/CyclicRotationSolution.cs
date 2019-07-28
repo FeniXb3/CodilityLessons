@@ -9,7 +9,7 @@ namespace Lesson02.CyclicRotation
             var amount = a.Length - k;
             var tmp = a.Skip(amount);
             var result = tmp
-                .Union(a.Take(amount))
+                .Concat(a.Take(amount))
                 .ToArray();
 
             return result;
