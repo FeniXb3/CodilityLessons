@@ -22,5 +22,14 @@ namespace Lesson02.OddOccurrencesInArray.Tests
 
             Assert.Equal(9, solution.Solution(a));
         }
+
+        [Fact]
+        void SingleValueTest()
+        {
+            var a = new[] {1000000000};
+            var solution = new OddOccurrencesInArraySolution();
+
+            Assert.Equal(1000000000, solution.Solution(a));
+        }
     }
 }
