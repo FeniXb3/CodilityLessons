@@ -13,5 +13,14 @@ namespace Lesson02.OddOccurrencesInArray.Tests
 
             Assert.Equal(7, solution.Solution(a));
         }
+
+        [Fact]
+        void PairsInARowTest()
+        {
+            var a = new[] {1, 1, 3, 3, 8, 8, 9};
+            var solution = new OddOccurrencesInArraySolution();
+
+            Assert.Equal(9, solution.Solution(a));
+        }
     }
 }
