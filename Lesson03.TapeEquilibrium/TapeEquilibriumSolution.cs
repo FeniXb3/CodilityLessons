@@ -9,10 +9,8 @@ namespace Lesson03.TapeEquilibrium
         public int Solution(int[] a)
         {
             var sums = a
-                .Aggregate(new List<int>(), (acc, v) => (acc.Count == a.Length)
-                    ? acc
-                    : CalculateDiffs(acc, v)
-                );
+                .SkipLast(1)
+                .Aggregate(new List<int>(), CalculateDiffs);
 
             var reverseSums = a
                 .Skip(1)
