@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Xunit;
 
 namespace Lesson02.OddOccurrencesInArray.Tests
@@ -30,6 +31,34 @@ namespace Lesson02.OddOccurrencesInArray.Tests
             var solution = new OddOccurrencesInArraySolution();
 
             Assert.Equal(1000000000, solution.Solution(a));
+        }
+
+        [Fact]
+        void RandomDataTest()
+        {
+            var random = new Random();
+            var min = 1;
+            var max = 100000000;
+            var expected = random.Next(max, max*2);
+
+            var expectedOccurances = Enumerable
+                .Repeat(expected, random.Next(1, 100) * 2 + 1).ToArray();
+
+            var n = 10000;
+            var a = Enumerable
+                .Repeat(0, n)
+                .Select(e =>
+                {
+                    var i = random.Next(min, max);
+                    return new[] {i, i, i, i, i, i, i, i, i, i};
+                })
+                .Append(expectedOccurances)
+                .SelectMany(e => e)
+                .ToArray();
+
+            var solution = new OddOccurrencesInArraySolution();
+
+            Assert.Equal(expected, solution.Solution(a));
         }
     }
 }
