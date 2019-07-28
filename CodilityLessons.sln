@@ -16,6 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03.FrogJmp", "Lesson0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03.FrogJmp.Tests", "Lesson03.FrogJmp.Tests\Lesson03.FrogJmp.Tests.csproj", "{EAB6D59A-2FE4-46BF-99B4-60B8401FF7E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03.PermMissingElem", "Lesson03.PermMissingElem\Lesson03.PermMissingElem.csproj", "{8F32B8A3-B364-4749-AD39-3BADDE346E9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03.PermMissingElem.Tests", "Lesson03.PermMissingElem.Tests\Lesson03.PermMissingElem.Tests.csproj", "{E45129A4-9AE1-4AEE-B757-1CB84A189B16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +58,13 @@ Global
 		{EAB6D59A-2FE4-46BF-99B4-60B8401FF7E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAB6D59A-2FE4-46BF-99B4-60B8401FF7E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAB6D59A-2FE4-46BF-99B4-60B8401FF7E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F32B8A3-B364-4749-AD39-3BADDE346E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F32B8A3-B364-4749-AD39-3BADDE346E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F32B8A3-B364-4749-AD39-3BADDE346E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F32B8A3-B364-4749-AD39-3BADDE346E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E45129A4-9AE1-4AEE-B757-1CB84A189B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E45129A4-9AE1-4AEE-B757-1CB84A189B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E45129A4-9AE1-4AEE-B757-1CB84A189B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E45129A4-9AE1-4AEE-B757-1CB84A189B16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
